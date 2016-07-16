@@ -10,12 +10,10 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html>
-
 <body>
 
 <%-- //[START datastore]--%>
 <%
-
     // Running a query to retrieve all the existing books in datastore.
       List<Book> books
       = ObjectifyService.ofy()

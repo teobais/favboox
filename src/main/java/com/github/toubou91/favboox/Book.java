@@ -10,7 +10,7 @@ import com.googlecode.objectify.annotation.Index;
  * The @Entity tells Objectify about our entity.  We also register it in {@link OfyHelper}
  * Our primary key @Id is set automatically by the Google Datastore for us.
  *
-   Objectify, unlike the AppEngine library requires that you specify the fields you
+ * Objectify, unlike the AppEngine library requires that you specify the fields you
  * want to index using @Index.  Only indexing the fields you need can lead to substantial gains in
  * performance -- though if not indexing your data from the start will require indexing it later.
  *

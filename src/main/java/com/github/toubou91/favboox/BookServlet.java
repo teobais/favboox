@@ -24,7 +24,6 @@ public class BookServlet extends HttpServlet {
     String content = req.getParameter("content");
     Book book =  new Book(content);
 
-
     // Use Objectify to save the book and now() is used to make the call synchronously as we
     // will immediately redirect to a new page and we want the data to be present.
     ObjectifyService.ofy().save().entity(book).now();
